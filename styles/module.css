@@ -1,0 +1,179 @@
+.swade-official .skills .note-header,
+.swade-official .skills .note-main,
+.swade-official .skills .note-footer,
+.swade-official .quickaccess .note-header,
+.swade-official .quickaccess  .note-main,
+.swade-official .quickaccess  .note-footer,
+.swade-official .description .char-img-container,
+
+.swade-official .header
+{
+    background-image: none;
+}
+
+.swade-official .sheet-header-official img#peg-logo {
+    display: none;
+}
+.swade-official .sheet-header-official img#swade-logo {
+    content : url("../ui/logo.png");
+}
+.swade-official.sheet input[type=text], .swade-official input[type="number"] {
+    background: transparent !important;
+}
+
+.swade-official.sheet .window-content,
+.swade.sheet .window-content,
+.chat-message, #items .directory-item
+ {
+    background: #E5F2F9 url("../ui/bg.png"); /* era digital-background.png */
+    background-size: 100% 100%;
+}
+/*  è lo stesso ma concettualmente sono due cose diverse, sopra schede qui journal e altro */
+
+/************************** QUI CAMBIA MOLTA ROBA *********************/
+.window-app .window-content {
+    background: #E5F2F9 url("../ui/bg.png"); /* era digital-background.png */
+    background-size: 100% 100%;
+}
+
+/************************** QUI SOLO JOURNAL *********************
+
+.journal-sheet .window-content {
+    background-color: white;
+    background-image: url("../ui/digital-background.png") !important;
+    background-size: 100% 100%;
+}
+*/
+a:hover {
+    text-shadow: none;
+}
+.swade-official button:hover,
+button:hover, button:focus {
+    box-shadow: none;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+.swade-official {
+    --section-header-color: #2c4251;
+    --input-background: #cbc0af;
+    --input-box-shadow: 0 0 5px #099afd;
+    --input-text-shadow: 0 0 10px #099afd;
+}
+
+.swade-official .header {
+    font-weight: bold; /*anche qui poi imposta sfondo o colore */
+}
+.swade-official .tabs .item {
+    color: #91afc3;
+    box-shadow: 0px -4px 6px -3px #91afc3, 0px -4px 6px -3px #abc2d1 inset;
+}
+
+.swade-official .tabs .item:hover {
+    color: #55809d;
+}
+
+.swade-official .tabs .active {
+    color: #2c4251;
+    box-shadow: 0px -6px 6px -1px #abc2d1;
+}
+
+.swade-official .item-create {
+    color: #91afc3;
+}
+
+.swade-official .item-create:hover,
+.swade-official .item-create :focus  {
+    color: #55809d;
+}
+
+.swade-official .wounds,
+.swade-official .fatigue {
+    background-image: none;
+}
+
+
+
+
+
+.swade .checkmark,
+.swade-official .checkmark {
+    background-color: #d1dde6;
+    border: 1px solid #abc2d1;
+}
+.swade .check-container:hover input ~ .checkmark,
+.swade-official .check-container:hover input ~ .checkmark {
+    background-color: #d1dde6;
+    box-shadow: 0 0 5px #099afd;
+}
+.swade .check-container:focus input ~ .checkmark,
+.swade-official .check-container:focus input ~ .checkmark {
+    box-shadow: 0 0 5px #099afd;
+}
+.swade .check-container input:checked ~ .checkmark,
+.swade-official .check-container input:checked ~ .checkmark {
+    background-color: #d1dde6;
+}
+
+/* Scheda dei png */
+.swade.sheet.item .sheet-body .header-field, .swade.sheet.actor .inventory .inventory-categories .item-list .item-header, .swade.sheet.actor .sheet-body .header-field {
+    background: #2c4251;
+    border: 1px solid #293133;
+    color: #dfe6f5;
+}
+
+.swade.sheet .tabs .item {
+    border: 1px solid #2c4251;
+    background: #cfe1ee;
+    color: #293133;
+}
+.swade.sheet .tabs .item:hover, .swade.sheet .tabs .item:focus {
+    background: #2c4251;
+    color: #dfe6f5;
+}
+.swade.sheet .tabs .item.active {
+    background: #2c4251;
+    color: #dfe6f5;
+}
+
+
+.swade.sheet.actor .inventory .inventory-categories .item-titles {
+    background: #2c4251;
+    color: white;
+}
+
+.swade.sheet.actor .powers .arcane-tabs .arcane {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: #2c4251;
+}
+
+/* modifiche alla lista degli oggetti */
+li.item img.item-profile, li.edge-hindrance img.item-image {
+    display: none;
+}
+/* specifico per Augmentations */
+[data-pack='swade-iz3.augmentations'] li.directory-item img.profile {
+    display: none;
+}
+/* Fine de specifico per Augmentations */
+li.item .entity-name {
+    padding-left: 12px;
+    color: #2c4251;
+    box-shadow: 0px -6px 6px -1px #abc2d1;
+}
+
+li.item .permission-viewer i {
+    color: #2c4251 !important;
+    box-shadow: 0px -6px 6px -1px #abc2d1;
+}
+
+li.directory-item.item, li.item .entity-name{
+    line-height: 28px !important;
+}
+/* Fine modifiche alla lista degli oggetti */
+
+/*  generico per folders */
+.folder-contents {
+    border-left: 0px;
+    border-bottom: 0px;
+}
