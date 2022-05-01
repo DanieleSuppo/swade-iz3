@@ -17,41 +17,47 @@ Alternativa aggiungere AE che aumenta  data.additionalStats.Strain.value come de
 
 import { createMaxStrain, updateMaxStrain} from "./utils/functions.js";
 
-console.log("Hello World! This code runs immediately when the file is loaded.");
-
-Hooks.on("init", function() {
-    console.log("This code runs once the Foundry VTT software begins it's initialization workflow.");
-    CONFIG.debug.hooks = true;
-});
-
 Hooks.on("ready", function() {
     console.log("This code runs once core initialization is ready and game data is available.");
 
-    /*
-    game.settings.set("swade", "settingFields",
+    const strainSetting = {
+        "strain": {
+            dtype: "Number",
+            hasMaxValue: true,
+            label: game.i18n.localize("SWADE.Strain")
+        }
+    }
+
+    //Adding strain if doesn't exist
+    game.settings.set('swade', 'settingFields',
         {
-            "actor": {
-                "strain": {
-                    dtype: "Number",
-                    hasMaxValue: true,
-                    label: game.i18n.localize("SWADE.Strain")
-                }
-            }
+            actor: mergeObject(game.settings.get('swade', 'settingFields').actor, strainSetting),
+            item: game.settings.get('swade', 'settingFields').item
         }
     );
-
-     */
-    //console.log(game.settings.get("swade", "settingFields").actor);
 
 });
 
 Hooks.on('createActor', async (actor) => {
     /*            Strain       */
-    // await createMaxStrain(actor);
+    await createMaxStrain(actor);
 
 })
 
 Hooks.on('updateActor', async (actor, updateData) => {
-    // await updateMaxStrain(actor, updateData);
+    await updateMaxStrain(actor, updateData);
 });
 
+Hooks.on('preUpdateSetting',  (actor, updateData) => {
+    //nothing for now, maybe alert about removing strain
+});
+Hooks.on('updateSetting',  (actor, updateData) => {
+    const isActive = JSON.parse(updateData.value)['swade-iz3'];
+    if(!isActive) {
+        console.log("TODO: remove custom additionalStats strain");
+    }
+});
+
+Hooks.once('devModeReady', ({ registerPackageDebugFlag }) => {
+    registerPackageDebugFlag('swade-iz3');
+});
