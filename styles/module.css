@@ -1,9 +1,21 @@
+/* Font section **/
 .swade-official {
-    font-family: Cronos-Pro, sans-serif;
+    --section-header-font: "Audiowide", "Anton", "Signika", sans-serif;
+    --default-font: "Cronos-Pro", "Roboto Slab", "Signika", serif;
+    --content-background-image: url("../ui/bg.png");
 }
-
-
-
+.swade-official .tabs .item {
+    font-family: "Audiowide", "Anton", "Signika", sans-serif;
+}
+.swade-official .section-header {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.swade-official .header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--section-header-font);
+}
 
 .swade-official .skills .note-header,
 .swade-official .skills .note-main,
@@ -68,9 +80,6 @@ button:hover, button:focus {
     --input-text-shadow: 0 0 10px #099afd;
 }
 
-.swade-official .header {
-    font-weight: bold; /*anche qui poi imposta sfondo o colore */
-}
 .swade-official .tabs .item {
     color: #91afc3;
     box-shadow: 0 -4px 6px -3px #91afc3, 0 -4px 6px -3px #abc2d1 inset;
