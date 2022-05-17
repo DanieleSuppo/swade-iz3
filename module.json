@@ -33,7 +33,7 @@
     "packs": [
         {
             "label": "Augmentations IZ 3.0",
-            "entity": "Item",
+            "type": "Item",
             "name": "augmentations",
             "path": "packs/augmentations.db",
             "system": "swade",
@@ -42,7 +42,7 @@
         },
         {
             "label": "SWADE",
-            "entity": "JournalEntry",
+            "type": "JournalEntry",
             "name": "swade",
             "path": "packs/swade.db",
             "system": "swade",
@@ -51,7 +51,7 @@
         },
         {
             "label": "Regole IZ 3.0",
-            "entity": "JournalEntry",
+            "type": "JournalEntry",
             "name": "regole-iz-30",
             "path": "packs/regole-iz-30.db",
             "system": "swade",
@@ -60,7 +60,7 @@
         },
         {
             "label": "Equipaggiamento IZ 3.0",
-            "entity": "JournalEntry",
+            "type": "JournalEntry",
             "name": "equipaggiamento-iz-30",
             "path": "packs/equipaggiamento-iz-30.db",
             "system": "swade",
@@ -69,7 +69,7 @@
         },
         {
             "label": "Test Edges IZ 2.0",
-            "entity": "Item",
+            "type": "Item",
             "name": "test-edges",
             "path": "packs/test-edges.db",
             "system": "swade",
@@ -78,7 +78,7 @@
         },
         {
             "label": "Test Armor IZ 2.0",
-            "entity": "Item",
+            "type": "Item",
             "name": "test-armor",
             "path": "packs/test-armor.db",
             "system": "swade",
@@ -87,7 +87,7 @@
         },
         {
             "label": "Test Weapons IZ 2.0",
-            "entity": "Item",
+            "type": "Item",
             "name": "test-weapons",
             "path": "packs/test-weapons.db",
             "system": "swade",

@@ -40,6 +40,15 @@
     background: transparent !important;
 }
 
+
+.swade-official input {
+    border: 0 !important;
+}
+.swade-official li {
+    border: 0 !important;
+}
+
+
 .swade-official.sheet .window-content,
 .swade.sheet .window-content,
 .chat-message, #items .directory-item
