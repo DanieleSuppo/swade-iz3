@@ -46,8 +46,12 @@
 }
 
 .swade-official .summary .attributes>.flexrow,
-.swade-official .summary .note-main{
+.swade-official .skills .skill-list,
+.swade-official .additional-stats
+{
     border: 2px solid rgba(59, 59, 59, 0.5);
+    width: 100%;
+    max-width: 100%;
 }
 
 .swade-official .skills .note-header,
