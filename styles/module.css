@@ -1,20 +1,51 @@
-/* Font section **/
+
 .swade-official {
+    --section-header-color: #2c4251;
+    --section-header-size: 16px;
+    --section-header-line-height: 24px;
+
+    --input-background: #cbc0af;
+    --input-box-shadow: 0 0 5px #099afd;
+    --input-text-shadow: 0 0 10px #099afd;
+    --color-text-dark-primary: #2c4251;
+
+    /* Font section **/
     --section-header-font: "Audiowide", "Anton", "Signika", sans-serif;
     --default-font: "Cronos-Pro", "Roboto Slab", "Signika", serif;
     --content-background-image: url("../ui/bg.png");
 }
+
+
 .swade-official .tabs .item {
     font-family: "Audiowide", "Anton", "Signika", sans-serif;
 }
 .swade-official .section-header {
     text-transform: uppercase;
-    font-weight: bold;
+//font-weight: bold;
+    /* added later */
+    background: #2c4251;
+    border: 1px solid #293133;
+    color: #dfe6f5;
+    line-height: var(--section-header-line-height);
 }
 .swade-official .header {
     text-transform: uppercase;
     font-weight: bold;
     font-family: var(--section-header-font);
+}
+
+.swade-official .note-box .section-header {
+    width: 100%;
+    margin: 0;
+}
+
+.swade-official .summary .quickaccess {
+    margin-left: 10px;
+}
+
+.swade-official .summary .attributes>.flexrow,
+.swade-official .summary .note-main{
+    border: 2px solid rgba(59, 59, 59, 0.5);
 }
 
 .swade-official .skills .note-header,
@@ -82,12 +113,6 @@ button:hover, button:focus {
     text-shadow: none;
 }
 
-.swade-official {
-    --section-header-color: #2c4251;
-    --input-background: #cbc0af;
-    --input-box-shadow: 0 0 5px #099afd;
-    --input-text-shadow: 0 0 10px #099afd;
-}
 
 .swade-official .tabs .item {
     color: #91afc3;
@@ -99,7 +124,7 @@ button:hover, button:focus {
 }
 
 .swade-official .tabs .active {
-    color: #2c4251;
+    color: var(--color-text-dark-primary);
     box-shadow: 0 -6px 6px -1px #abc2d1;
 }
 
@@ -135,39 +160,21 @@ button:hover, button:focus {
 .swade-official .check-container:focus input ~ .checkmark {
     box-shadow: 0 0 5px #099afd;
 }
-.swade .check-container input:checked ~ .checkmark,
+.swade-official .check-container input:checked ~ .checkmark,
 .swade-official .check-container input:checked ~ .checkmark {
     background-color: #d1dde6;
 }
 
 /* Scheda dei png */
-.swade.sheet.item .sheet-body .header-field, .swade.sheet.actor .inventory .inventory-categories .item-list .item-header, .swade.sheet.actor .sheet-body .header-field {
+.swade-official.sheet .sheet-body .header, .swade.sheet.actor .inventory .inventory-categories .item-list .item-header, .swade.sheet.actor .sheet-body .header-field {
     background: #2c4251;
     border: 1px solid #293133;
     color: #dfe6f5;
-}
-
-.swade.sheet .tabs .item {
-    border: 1px solid #2c4251;
-    background: #cfe1ee;
-    color: #293133;
-}
-.swade.sheet .tabs .item:hover, .swade.sheet .tabs .item:focus {
-    background: #2c4251;
-    color: #dfe6f5;
-}
-.swade.sheet .tabs .item.active {
-    background: #2c4251;
-    color: #dfe6f5;
+    font-weight: normal;
 }
 
 
-.swade.sheet.actor .inventory .inventory-categories .item-titles {
-    background: #2c4251;
-    color: white;
-}
-
-.swade.sheet.actor .powers .arcane-tabs .arcane {
+.swade-official.sheet.actor .powers .arcane-tabs .arcane {
     border: 1px solid rgba(0, 0, 0, 0.5);
     background: #2c4251;
 }
