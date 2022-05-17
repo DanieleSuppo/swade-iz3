@@ -27,6 +27,8 @@
     border: 1px solid #293133;
     color: #dfe6f5;
     line-height: var(--section-header-line-height);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .swade-official .header {
     text-transform: uppercase;
