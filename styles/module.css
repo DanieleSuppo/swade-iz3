@@ -4,7 +4,7 @@
     --section-header-size: 16px;
     --section-header-line-height: 24px;
 
-    --input-background: #cbc0af;
+    --input-background: #d1dde6;
     --input-box-shadow: 0 0 5px #099afd;
     --input-text-shadow: 0 0 10px #099afd;
     --color-text-dark-primary: #2c4251;
@@ -47,11 +47,20 @@
 
 .swade-official .summary .attributes>.flexrow,
 .swade-official .skills .skill-list,
-.swade-official .additional-stats
+.swade-official .additional-stats,
+.swade-official ul.effects-list,
+.swade-official ol.quick-list
 {
-    border: 2px solid rgba(59, 59, 59, 0.5);
+    background-color: #fafdff;
     width: 100%;
     max-width: 100%;
+}
+
+.swade-official .skills .skill-list,
+.swade-official ul.effects-list,
+.swade-official ol.quick-list
+{
+    padding-right: 10px;
 }
 
 .swade-official .skills .note-header,
