@@ -37,7 +37,7 @@
     "minimumCoreVersion": "10",
     "compatibleCoreVersion": "10",
     "manifestPlusVersion": "1.0.0",
-    "author": "Daniele Suppo",
+    "authors": [{"name":  "dsuppo"}],
     "esmodules": [
         "/scripts/module.js"
     ],
@@ -66,8 +66,7 @@
             "path": "packs/augmentations.db",
             "system": "swade",
             "package": "swade-iz3",
-            "private": false,
-            "entity": "Item"
+            "private": false
         },
         {
             "label": "SWADE",
@@ -76,8 +75,7 @@
             "path": "packs/swade.db",
             "system": "swade",
             "package": "swade-iz3",
-            "private": false,
-            "entity": "JournalEntry"
+            "private": false
         },
         {
             "label": "Regole IZ 3.0",
@@ -86,8 +84,7 @@
             "path": "packs/regole-iz-30.db",
             "system": "swade",
             "package": "swade-iz3",
-            "private": false,
-            "entity": "JournalEntry"
+            "private": false
         },
         {
             "label": "Equipaggiamento IZ 3.0",
@@ -96,8 +93,7 @@
             "path": "packs/equipaggiamento-iz-30.db",
             "system": "swade",
             "package": "swade-iz3",
-            "private": false,
-            "entity": "JournalEntry"
+            "private": false
         },
         {
             "label": "Test Edges IZ 2.0",
@@ -106,8 +102,7 @@
             "path": "packs/test-edges.db",
             "system": "swade",
             "package": "swade-iz3",
-            "private": false,
-            "entity": "JournalEntry"
+            "private": false
         },
         {
             "label": "Test Armor IZ 2.0",
@@ -116,8 +111,7 @@
             "path": "packs/test-armor.db",
             "system": "swade",
             "package": "swade-iz3",
-            "private": false,
-            "entity": "JournalEntry"
+            "private": false
         },
         {
             "label": "Test Weapons IZ 2.0",
@@ -126,8 +120,7 @@
             "path": "packs/test-weapons.db",
             "system": "swade",
             "package": "swade-iz3",
-            "private": false,
-            "entity": "JournalEntry"
+            "private": false
         }
     ],
     "dependencies": [
