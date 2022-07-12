@@ -8,7 +8,7 @@ export const createMaxStrain = async function (actor) {
                     hasMaxValue: true,
                     label: game.i18n.localize("SWADE.Strain"),
                     //TODO for v10: replace with data or system check discord?
-                    max : actor.data.data.attributes.vigor.die.sides,
+                    max : actor.system.attributes.vigor.die.sides,
                     value: 0
                 }
             }
@@ -22,24 +22,24 @@ export const updateMaxStrain = async function (actor, updateData) {
     let strain = null;
     let current = 0;
     //TODO for v10: replace with actor.system?
-    if(actor.data.data.additionalStats["strain"] !== undefined
-        && actor.data.data.additionalStats["strain"].value !== null) {
-        current = actor.data.data.additionalStats["strain"].value;
+    if(actor.system.additionalStats["strain"] !== undefined
+        && actor.system.additionalStats["strain"].value !== null) {
+        current = actor.system.additionalStats["strain"].value;
         console.log(current);
     }
 
     //Add strain if not present
     //TODO for v10: replace with with actor.system?
-    if(actor.data.data.additionalStats["strain"] === undefined) {
-        strain = actor.data.data.attributes.vigor.die.sides;
+    if(actor.system.additionalStats["strain"] === undefined) {
+        strain = actor.system.attributes.vigor.die.sides;
     }
 
     //Changing the Vigor
     if ((updateData.data != null &&
-        updateData.data.attributes != null
-    && updateData.data.attributes.vigor != null
+        updateData.attributes != null
+    && updateData.attributes.vigor != null
     )) {
-        strain = updateData.data.attributes.vigor.die.sides;
+        strain = updateData.attributes.vigor.die.sides;
     }
     //Changing the Max Strain, it wins over changes of Vigor
     if (updateData.additionalStats != null
