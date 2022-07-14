@@ -14,7 +14,7 @@ export const createMaxStrain = async function (actor) {
             }
         }
     }
-    await actor.update(newData);
+    await actor.updateSource(newData); //TODO change to updateSource ?
 }
 
 export const updateMaxStrain = async function (actor, updateData) {
@@ -63,6 +63,6 @@ export const updateMaxStrain = async function (actor, updateData) {
                 }
             }
         }
-        await actor.update(newData);
+        await actor.update(newData);  //TODO change to updateSource ?
     }
 }
