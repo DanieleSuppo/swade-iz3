@@ -2,8 +2,8 @@
     "name": "swade-iz3",
     "id": "swade-iz3",
     "compatibility": {
-        "minimum": 10,
-        "verified": 10
+        "minimum": "10",
+        "verified": "10"
     },
     "relationships": {
         "systems": [
