@@ -23,7 +23,6 @@
     "version": "0.0.5",
     "minimumCoreVersion": "10",
     "compatibleCoreVersion": "11",
-    "manifestPlusVersion": "1.0.0",
     "authors": [
         {
             "name": "dsuppo"
