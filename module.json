@@ -20,9 +20,6 @@
     },
     "title": "SWADE - Interface Zero 3.0",
     "description": "Add some specific fields to play IZ3.0",
-    "system": [
-        "swade"
-    ],
     "version": "0.0.5",
     "minimumCoreVersion": "10",
     "compatibleCoreVersion": "11",
