@@ -1,9 +1,8 @@
 {
-    "name": "swade-iz3",
     "id": "swade-iz3",
     "compatibility": {
         "minimum": "10",
-        "verified": "12"
+        "verified": "13"
     },
     "relationships": {
         "systems": [
@@ -21,8 +20,6 @@
     "title": "SWADE - Interface Zero 3.0",
     "description": "Add some specific fields to play IZ3.0",
     "version": "0.0.5",
-    "minimumCoreVersion": "10",
-    "compatibleCoreVersion": "11",
     "authors": [
         {
             "name": "dsuppo"
@@ -111,12 +108,6 @@
             "system": "swade",
             "package": "swade-iz3",
             "private": false
-        }
-    ],
-    "dependencies": [
-        {
-            "id": "swade",
-            "type": "system"
         }
     ],
     "url": "https://github.com/DanieleSuppo/swade-iz3",
